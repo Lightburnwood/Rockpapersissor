@@ -1,0 +1,55 @@
+
+body{
+    background-color: rgb(6, 19, 49);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+   
+header{
+    background-color: cornsilk;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    font-family: arial;
+    justify-content: center ;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+ 
+button{
+    border: 1px solid cornsilk;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 80px;
+    margin-top: 50px;
+    /*margin-left: 150px;*/
+    background-color: rgb(255, 248, 220);
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(255, 248, 240);
+}
+
+.score{
+    color: cornsilk;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#result{
+    color: cornsilk;
+    font-size: 50px;
+    text-align: center;
+
+}
