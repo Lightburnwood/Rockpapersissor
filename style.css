@@ -1,18 +1,19 @@
 
 body{
-    background-color: rgb(6, 19, 49);
+    background-color: #f4f4f4;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
    
 header{
-    background-color: cornsilk;
+    background-color: rgb(0, 0, 0);
     height: 100px;
     align-items: center;
     display: flex;
-    font-size: 40px;
+    font-size: 60px;
     font-family: arial;
-    justify-content: center ;
+    justify-content: center;
+    color: #f4f4f4;
 }
 
 .div{
@@ -24,23 +25,23 @@ header{
 }
  
 button{
-    border: 1px solid cornsilk;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
     width: 200px;
     height: 200px;
     font-size: 80px;
     margin-top: 50px;
-    /*margin-left: 150px;*/
-    background-color: rgb(255, 248, 220);
+    background-color: rgb(0, 0, 0);
     margin-bottom: 100px;
     cursor: pointer;
+    padding-bottom: 7px;
 }
 button:hover{
-    background-color: rgb(255, 248, 240);
+    background-color: #f4f4f4;
 }
 
 .score{
-    color: cornsilk;
+    color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,8 +49,22 @@ button:hover{
 }
 
 #result{
-    color: cornsilk;
+    color: rgb(0, 0, 0);
     font-size: 50px;
     text-align: center;
+    font-weight: bold;
 
+}
+
+#playerresult,#computerresult{
+    font-size: 80px;
+
+}
+
+#s{
+    padding-right: 10px;
+}
+
+#p{
+    padding-left: 11px;
 }

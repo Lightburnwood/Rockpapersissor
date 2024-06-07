@@ -8,12 +8,27 @@ const rock = document.getElementById("r");
 const paper = document.getElementById("p");
 const sissor = document.getElementById("s");
 const last = document.getElementById("result");
+const playerresult = document.getElementById("playerresult")
+const computerresult = document.getElementById("computerresult")
 
     function getcomputerChoice(){
     const choices = ['r', 'p', 's'];
     const randomnumber = Math.floor(Math.random() * 3 );
     return choices[randomnumber];
 }
+
+function getEmoji(choice) {
+    switch (choice) {
+        case 'r':
+            return '✊';
+        case 'p':
+            return '✋'; 
+        case 's':
+            return '✌️';
+    }
+}
+
+
 
 
 
@@ -22,7 +37,8 @@ function win(userchoice, computerchoice) {
     playerscore.innerHTML = wins;
     computerscore.innerHTML = loss;
     last.innerHTML = `YOU WIN!`;
-
+    playerresult.innerHTML = getEmoji(userchoice);
+    computerresult.innerHTML = getEmoji(computerchoice);
 }
 
 
@@ -32,6 +48,8 @@ function lost(userchoice, computerchoice) {
     playerscore.innerHTML = wins;
     computerscore.innerHTML = loss;
     last.innerHTML = `YOU LOST!`;
+    playerresult.innerHTML = getEmoji(userchoice);
+    computerresult.innerHTML = getEmoji(computerchoice);
 }
 
 
@@ -39,7 +57,9 @@ function lost(userchoice, computerchoice) {
 function draw(userchoice, computerchoice) {
     playerscore.innerHTML = wins;
     computerscore.innerHTML = loss;
-    last.innerHTML = `IT'S A DRAW`; 
+    last.innerHTML = `IT'S A DRAW`;
+    playerresult.innerHTML = getEmoji(userchoice);
+    computerresult.innerHTML = getEmoji(computerchoice);
 }
 
 
